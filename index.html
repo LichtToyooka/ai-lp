@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIプログラミング学習コミュニティ</title>
+    <style>
+        :root {
+            --primary-color: #e67e22; /* Warm Orange */
+            --secondary-color: #f1c40f; /* Warm Yellow */
+            --background-color: #fdf5e6; /* Old Lace */
+            --text-color: #333;
+            --dark-background: #5d4037; /* Dark Brown */
+            --light-text: #ecf0f1;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: var(--dark-background);
+            color: var(--light-text);
+            padding: 4rem 2rem;
+            text-align: center;
+            border-bottom: 5px solid var(--primary-color);
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        section {
+            padding: 4rem 2rem;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        section:nth-child(even) {
+            background-color: #fff;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            margin-bottom: 2rem;
+            color: var(--primary-color);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            text-align: left;
+        }
+
+        .feature-item {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+
+        .feature-item h3 {
+            font-size: 1.4rem;
+            margin-top: 0;
+            color: var(--dark-background);
+        }
+
+        .discord-button {
+            display: inline-block;
+            background-color: #5865F2; /* Discord's brand color */
+            color: white;
+            padding: 15px 35px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin-top: 1rem;
+        }
+
+        .discord-button:hover {
+            background-color: #4752C4;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: var(--dark-background);
+            color: var(--light-text);
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        li {
+            background: #fffaf0; /* Floral White */
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 5px solid var(--primary-color);
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>未来を創る、AIプログラミングの世界へようこそ</h1>
+            <p>初心者から経験者まで、共に学び、成長できるコミュニティです。</p>
+            <a href="#" class="discord-button">今すぐDiscordに参加！</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="features">
+            <div class="container">
+                <h2>このコミュニティでできること</h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <h3>最新技術の学習</h3>
+                        <p>最新のAI論文や技術トレンドを追いかけ、メンバー同士で知識を共有し合います。</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>実践的なスキルアップ</h3>
+                        <p>Pythonや各種フレームワークを使ったハンズオンや勉強会で、手を動かしながら学びます。</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>プロジェクト開発</h3>
+                        <p>仲間とチームを組んで、オリジナルのAIアプリケーションやサービス開発に挑戦できます。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="target">
+            <div class="container">
+                <h2>こんな方におすすめ</h2>
+                <ul>
+                    <li>AIやプログラミングに興味があるけど、何から始めればいいか分からない方</li>
+                    <li>独学に限界を感じ、一緒に学ぶ仲間が欲しい方</li>
+                    <li>自分のアイデアを形にするための技術力とサポートが欲しい方</li>
+                    <li>キャリアチェンジを目指し、実践的なポートフォリオを作りたい方</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="join">
+            <div class="container">
+                <h2>コミュニティに参加しよう</h2>
+                <p>参加はとても簡単です。下のボタンからDiscordサーバーに参加するだけ！<br>あなたのご参加を心よりお待ちしています。</p>
+                <a href="#" class="discord-button">Discordに参加する</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 AI Programming Community. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
